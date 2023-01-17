@@ -31,7 +31,9 @@ body{
 #screen{
     width: 260px;
     height: 100px;
-    border: 2px solid black;
+    border: 2px solid rgb(90, 81, 81);
+    border-radius: 10px;
+    box-shadow: 1px 1px;
 }
 
 .output{
