@@ -36,12 +36,20 @@ body{
     box-shadow: 1px 1px;
 }
 .old{
-    border: 2px solid black;
-    height: 50px;
+     /* border: 2px solid black;*/
+    height: 40px;
+
+    display: flex;
+    justify-content: end;
+    padding: 0.5em;
 }
 .new{
-    border: 2px solid black;
+   /* border: 2px solid black;*/
     height: 50px;
+
+    display: flex;
+    justify-content: end;
+    padding: 0.5em;
 }
 .output{
     display: flex;
