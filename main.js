@@ -46,8 +46,13 @@ clear.addEventListener("click",(cl)=>{
 
 // =
 equal.addEventListener("click",(eq)=>{
-    oldScreen.textContent =  operate();
+    //To fix NaN input bug & display =
+    (oldNum!=""&&currentScreen!="") ? oldScreen.textContent= `Ans = ${operate()}` : "";
 
+})
+
+decimal.addEventListener("click",(dec)=>{
+    decimalAdd();
 })
 
 
@@ -72,4 +77,8 @@ function operate(){
     (operator === "-") ? oldNum -= currentNum : "";
 
     return oldNum;
+}
+
+function decimalAdd(){
+    (!currentNum.includes("."))? currentNum += "." : "";
 }
