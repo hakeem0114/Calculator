@@ -15,16 +15,20 @@ let current = document.querySelector(".new");
 
 //Global Initials
 old = "";
-current = "";
+currentNum = "";
 operator = "";
 
 //Output values
 numbers.forEach((number) => { //For each node in nodelist, check if # is pressed
     number.addEventListener("click",(button)=>{
-       let value = button.target.textContent; //Add target to avoid event bubbling
-       console.log(value)
-
-       current.textContent += value;
-
+       changeNum(button.target.textContent); //Add target to get where element occurs. Textcontent display targeted value.
+        current.textContent = currentNum;
     })
 });
+
+
+
+
+function changeNum(num){
+    (currentNum.length <=10) ? currentNum += num : ""; //Takes in 10 max #s & returns number 
+}
