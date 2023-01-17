@@ -21,7 +21,10 @@ operator = "";
 //Output values
 numbers.forEach((number) => { //For each node in nodelist, check if # is pressed
     number.addEventListener("click",(button)=>{
-       value = button.target.textContent; //Add target to avoid event bubbling
+       let value = button.target.textContent; //Add target to avoid event bubbling
        console.log(value)
+
+       current.textContent += value;
+
     })
 });

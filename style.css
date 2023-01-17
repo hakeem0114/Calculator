@@ -35,7 +35,14 @@ body{
     border-radius: 10px;
     box-shadow: 1px 1px;
 }
-
+.old{
+    border: 2px solid black;
+    height: 50px;
+}
+.new{
+    border: 2px solid black;
+    height: 50px;
+}
 .output{
     display: flex;
     margin-bottom: 1em;
