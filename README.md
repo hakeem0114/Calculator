@@ -1,2 +1,2 @@
-# Scientific Calculator
+# Calculator
 Styled with bootstrap & css
